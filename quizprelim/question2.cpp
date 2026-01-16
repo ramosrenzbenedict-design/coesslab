@@ -3,26 +3,26 @@
 using namespace std;
 
 struct Process {
-int pid;
-double burst;
-double waiting;
-double turnaround;
-double completionTime;
+    int pid;
+    double burst;
+    double waiting;
+    double turnaround;
+    double completionTime;
 };
 
 int main() {
     const int n = 10;
     Process p[n] = {
-    {1, 3, 0, 0, 0},
-    {2, 5, 0, 0, 0},
-    {3, 4, 0, 0, 0},
-    {4, 3, 0, 0, 0},
-    {5, 2, 0, 0, 0},
-    {6, 1, 0, 0, 0},
-    {7, 6, 0, 0, 0},
-    {8, 7, 0, 0, 0},
-    {9, 8, 0, 0, 0},
-    {10, 1, 0, 0, 0}
+        {1, 3, 0, 0, 0},
+        {2, 5, 0, 0, 0},
+        {3, 4, 0, 0, 0},
+        {4, 3, 0, 0, 0},
+        {5, 2, 0, 0, 0},
+        {6, 1, 0, 0, 0},
+        {7, 6, 0, 0, 0},
+        {8, 7, 0, 0, 0},
+        {9, 8, 0, 0, 0},
+        {10, 1, 0, 0, 0}
     };
 
     // FCFS Scheduling
@@ -41,10 +41,10 @@ int main() {
     cout << "PID\tBurst\tWaiting\tTurnaround\tCompletion\n";
     for (int i = 0; i < n; i++) {
         cout << p[i].pid << "\t"
-        << p[i].burst << "\t"
-        << p[i].waiting << "\t"
-        << p[i].turnaround << "\t\t"
-        << p[i].completionTime << "\n";
+             << p[i].burst << "\t"
+             << p[i].waiting << "\t"
+             << p[i].turnaround << "\t\t"
+             << p[i].completionTime << "\n";
     }
 
     double totalWT = 0, totalTAT = 0;
