@@ -1,0 +1,30 @@
+instruction
+using c++, prelim.cpp, code na magagamit sa pag eexecute ng mga algorithm na ito 
+- round robin
+- shortest job first
+- shortest remaining time first
+variables ay shortened, gaya ng at bt wt ct, id
+gagamit ng struct na ang name ay Process
+cacalculate ng quantum time sa round robin, dapat ay mean or median ng burst time ung quantum time
+
+
+function names
+roundrobin, sjf, srtf
+
+lalagay sa table ung result ng bawat isang algorithm
+pid, arrival, burst, completion, turnaround, waiting
+
+
+sa ilalim ng bawat table
+ave tt at ave wt
+
+
+sa main, hindi na magtatanong sa user ng arrival time at burst time, 
+dapat magkakasunod na print ang table ng roundrobin, sjf, srtf
+
+
+order ng functions quantum -> rr -> sjf -> srtf -> int main
+
+at na initiate: 4,2,3,6,1,5,8,7
+bt na initiate: 53,43,18,16,44,73,99,27
+process: 8
